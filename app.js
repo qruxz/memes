@@ -8,7 +8,7 @@ function updateMeme(url, title, author) {
   memeInfo.innerHTML = `Title: ${title} <br> Author: ${author}`;
 }
 function getMeme() {
-  fetch("https://meme-api.com/gimme/memes")
+  fetch("https://meme-api.com/gimme/Meme")
     .then((res) => res.json())
     .then((data) => {
       updateMeme(data.url, data.title, data.author);
